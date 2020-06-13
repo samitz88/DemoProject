@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 49.388 s <<< FAILURE! - in TestSuite
+testCase.LoginTest.login  Time elapsed: 9.673 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testCase.LoginTest.login(LoginTest.java:44)
+
+testCase.LoginTest.login  Time elapsed: 6.536 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testCase.LoginTest.login(LoginTest.java:44)
+
+testCase.LoginTest.login  Time elapsed: 6.268 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testCase.LoginTest.login(LoginTest.java:44)
+

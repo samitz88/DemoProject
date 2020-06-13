@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="configurations.Listeners"/>
+  </listeners>
+  <test thread-count="1" name="Timepass(failed)" parallel="tests">
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- Timepass(failed) -->
+</suite> <!-- Failed suite [Suite] -->

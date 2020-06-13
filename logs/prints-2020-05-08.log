@@ -1,0 +1,6 @@
+05:25:38.055 [TestNG-tests-1] ERROR reusable.LoginReuseable - Login link clicked
+05:25:38.524 [TestNG-tests-1] INFO  reusable.LoginReuseable - Username enetered
+05:25:38.847 [TestNG-tests-1] INFO  reusable.LoginReuseable - Password enetered
+05:25:39.091 [TestNG-tests-1] INFO  reusable.LoginReuseable - Login Button clicked
+05:25:42.320 [TestNG-tests-1] INFO  reusable.LoginReuseable - URL https://rahulshettyacademy.com/ launched successfully
+05:25:46.589 [TestNG-tests-1] ERROR reusable.LoginReuseable - Login link clicked
