@@ -20,7 +20,7 @@ public class KeywordDriver extends BaseModuleDriver {
 	}
 	public void get(String url) {
 		kwDriver.get(url);
-		Log.info("Navigated to "+ url+ " successfully");
+		Log.info("Navigated to '"+ url+ "' successfully");
 	}
 	
 	public void sleep(int secs) {
@@ -33,13 +33,13 @@ public class KeywordDriver extends BaseModuleDriver {
 	
 	public void type(By locator,String value) {
 		kwDriver.findElement(locator).sendKeys(value);
-		Log.info("Value " + value + " enetered in "  + locator+ " successfully");
+		Log.info("Value '" + value + "' entered in { "  + locator+ " } successfully");
 		
 	}
 
 	public void click(By locator) {
 		kwDriver.findElement(locator).click();
-		Log.info( locator + "clicked successfully");
+		Log.info( "{ "+locator + " } clicked successfully");
 		
 
 	}

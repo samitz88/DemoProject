@@ -34,6 +34,7 @@ public class BaseModuleDriver {
 			 if (browserName.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", basePath + "\\src\\test\\java\\lib\\chromedriver.exe");
 				uiDriver = new ChromeDriver();
+				
 			} else if (browserName.equalsIgnoreCase("edge")) {
 				uiDriver = new EdgeDriver();
 			} else if (browserName.equalsIgnoreCase("safari")) {
@@ -43,6 +44,7 @@ public class BaseModuleDriver {
 				uiDriver = new FirefoxDriver();
 			}
 			uiDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			uiDriver.get(properties.getProperty("url"));
 
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27467" started-at="2020-06-15T17:23:07 IST" finished-at="2020-06-15T17:23:35 IST">
+  <suite name="Default suite" duration-ms="34335" started-at="2020-06-15T17:48:40 IST" finished-at="2020-06-15T17:49:14 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27467" started-at="2020-06-15T17:23:07 IST" finished-at="2020-06-15T17:23:35 IST">
+    <test name="Default test" duration-ms="34335" started-at="2020-06-15T17:48:40 IST" finished-at="2020-06-15T17:49:14 IST">
       <class name="testCase.LoginTest">
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:testCase.LoginTest@51acdf2e]" name="login" duration-ms="11230" started-at="2020-06-15T17:23:08 IST" data-provider="getTestData" finished-at="2020-06-15T17:23:19 IST">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:testCase.LoginTest@3568f9d2]" name="login" duration-ms="16723" started-at="2020-06-15T17:48:41 IST" data-provider="getTestData" finished-at="2020-06-15T17:48:57 IST">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:testCase.LoginTest@51acdf2e]" name="login" duration-ms="7889" started-at="2020-06-15T17:23:19 IST" data-provider="getTestData" finished-at="2020-06-15T17:23:27 IST">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:testCase.LoginTest@3568f9d2]" name="login" duration-ms="7911" started-at="2020-06-15T17:48:57 IST" data-provider="getTestData" finished-at="2020-06-15T17:49:05 IST">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:testCase.LoginTest@51acdf2e]" name="login" duration-ms="7850" started-at="2020-06-15T17:23:27 IST" data-provider="getTestData" finished-at="2020-06-15T17:23:35 IST">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:testCase.LoginTest@3568f9d2]" name="login" duration-ms="9059" started-at="2020-06-15T17:49:05 IST" data-provider="getTestData" finished-at="2020-06-15T17:49:14 IST">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:testCase.LoginTest@51acdf2e]" name="closeDriver" is-config="true" duration-ms="63" started-at="2020-06-15T17:23:35 IST" finished-at="2020-06-15T17:23:35 IST">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:testCase.LoginTest@3568f9d2]" name="closeDriver" is-config="true" duration-ms="66" started-at="2020-06-15T17:49:14 IST" finished-at="2020-06-15T17:49:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
