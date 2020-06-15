@@ -41,7 +41,7 @@ public class Log {
 
 	public static void endTestCase(String sTestCaseName) {
 
-		log.info("XXXXXXXXXXXXXXXXXXXXXXX             " + "-E---N---D-" + "             XXXXXXXXXXXXXXXXXXXXXX");
+		log.info("**************************************" + "-E---N---D-" + "**************************************");
 
 
 	}

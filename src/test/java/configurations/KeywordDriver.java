@@ -16,11 +16,9 @@ public class KeywordDriver extends BaseModuleDriver {
 	WebDriver kwDriver;
 	WebElement sElement;
 	public KeywordDriver() {
-		//super(kwDriver);
 		this.kwDriver=super.intializeDriver();
-		//PageFactory.initElements(kwDriver, this);
 	}
-	public void getURL(String url) {
+	public void get(String url) {
 		kwDriver.get(url);
 	}
 	
@@ -28,7 +26,6 @@ public class KeywordDriver extends BaseModuleDriver {
 		try {
 			Thread.sleep(secs*1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -42,10 +39,7 @@ public class KeywordDriver extends BaseModuleDriver {
 		kwDriver.findElement(locator).click();
 
 	}
-	public void get(String url) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 	public String getCurrentUrl() {
 		// TODO Auto-generated method stub

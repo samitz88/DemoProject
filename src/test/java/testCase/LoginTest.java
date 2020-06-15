@@ -33,16 +33,17 @@ public class LoginTest  {
 	@Test(dataProvider = "getTestData")
 	public void login(String username, String password) throws InterruptedException {
 		Log.startTestCase("TC001");
-		Log.error("Test case started");
+		Log.info("Test case started");
 		// String urlString = "https://rahulshettyacademy.com/";
 		lm.navigate();
 		lm.login(username, password);
+		Log.info("Test case ended");
+		Log.endTestCase("TC001");
 	}
 	
 	@AfterTest
 	public void closeDriver() {
-		Log.endTestCase("TC002");
-		Log.error("test case ended");
+		Log.info("Close Browser");
 		lm.close();
 	}
 

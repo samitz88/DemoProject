@@ -10,7 +10,7 @@ public class loginModule {
 	signInPageObjects si = new signInPageObjects();
 
 	public void navigate() {
-		driver.getURL("https://rahulshettyacademy.com/");
+		driver.get("https://rahulshettyacademy.com/");
 		driver.sleep(3);
 	}
 
