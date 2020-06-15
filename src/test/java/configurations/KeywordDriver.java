@@ -20,6 +20,7 @@ public class KeywordDriver extends BaseModuleDriver {
 	}
 	public void get(String url) {
 		kwDriver.get(url);
+		Log.info("Navigated to "+ url+ " successfully");
 	}
 	
 	public void sleep(int secs) {
@@ -32,11 +33,14 @@ public class KeywordDriver extends BaseModuleDriver {
 	
 	public void type(By locator,String value) {
 		kwDriver.findElement(locator).sendKeys(value);
-		kwDriver.findElement(locator).getTagName();
+		Log.info("Value " + value + " enetered in "  + locator+ " successfully");
+		
 	}
 
 	public void click(By locator) {
 		kwDriver.findElement(locator).click();
+		Log.info( locator + "clicked successfully");
+		
 
 	}
 	
@@ -68,12 +72,14 @@ public class KeywordDriver extends BaseModuleDriver {
 
 	public void close() {
 		kwDriver.close();
+		Log.info("Current Browser instance closed successfully");
 
 		
 	}
 
 	public void quit() {
-		// TODO Auto-generated method stub
+		kwDriver.quit();
+		Log.info("All open instances of browser closed successfully");
 		
 	}
 
