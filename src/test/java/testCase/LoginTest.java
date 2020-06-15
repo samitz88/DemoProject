@@ -14,18 +14,21 @@ public class LoginTest {
 	ExcelUtils ex = new ExcelUtils();
 
 	@Test(dataProvider = "getTestData")
-	public void login(String username, String password) throws InterruptedException {
+	public void login(String username, String password) {
 		Log.startTestCase("TC001");
 		Log.info("Test case started");
 		lm.navigate();
+		lm.clickHeaderLoginlink();
 		lm.login(username, password);
+		lm.verifyLogin(username);
 		Log.info("Test case ended");
 		Log.endTestCase("TC001");
+		lm.close();
 	}
 
 	@AfterTest
 	public void closeDriver() {
-		lm.close();
+		lm.closeAll();
 	}
 
 	/*
@@ -41,7 +44,7 @@ public class LoginTest {
 	@DataProvider
 	public Object[][] getTestData() throws IOException, ParseException {
 		Object[][] data;
-		data = ex.getData("TC001", "C:\\Users\\samit\\work\\Testdata.xlsx");
+		data = ex.getData("TC001", System.getProperty("user.dir")+"\\src\\test\\java\\data\\Testdata.xlsx");
 		return data;
 
 	}

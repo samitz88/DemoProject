@@ -44,7 +44,6 @@ public class BaseModuleDriver {
 				uiDriver = new FirefoxDriver();
 			}
 			uiDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			uiDriver.get(properties.getProperty("url"));
 
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
