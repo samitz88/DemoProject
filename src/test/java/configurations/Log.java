@@ -5,11 +5,15 @@ import java.io.File;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.core.LoggerContext;
+import org.slf4j.event.Level;
+
+import net.bytebuddy.implementation.Implementation.Context;
 
 public class Log {
 
-static //Initialize log4j logs
-	LoggerContext context = (LoggerContext) LogManager.getContext(false);
+//static //Initialize log4j logs
+	//LoggerContext context = (LoggerContext) LogManager.getContext(false);
+
 	
 
 /*
@@ -23,6 +27,7 @@ static //Initialize log4j logs
  */
 
 	private static Logger log = LogManager.getLogger(Log.class.getName());
+	
 // This is to print log for the beginning of the test case, as we usually run so many test cases as a test suite
 
 	public static void startTestCase(String sTestCaseName) {
